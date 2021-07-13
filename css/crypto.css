@@ -1,0 +1,197 @@
+.app-header {
+  background-color: rgb(46, 41, 41);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-image: url("./background_image.png"); */
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  /* min-height: 20vh; */
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 22vmin;
+  border-bottom: solid 6px rgb(109, 231, 219);
+  /* margin-top: 30vmin; */
+  /* align-items: center;
+  align-content: stretch; */
+  /* add flex-wrap: wrap; for mobile-first */
+}
+
+.app-logo {
+  /* display: flex; */
+  height: 20vmin;
+  padding-bottom: 5vmin;
+  margin-left: 10vmin;
+  margin-bottom: 8vmin;
+  /* padding-top: 30px;
+  padding-right: 20px; */
+  /* order: -1; */
+  /* pointer-events: none; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 40s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.h3 {
+  font-size: 3vmin;
+}
+
+.nav {
+  display: flex;
+  /* justify-content: right; */
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8vmin;
+  padding-left: 100vmin;
+  background-color: rgb(46, 41, 41);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: rgb(59, 54, 54); */
+  /* border-bottom: solid 5px lime; */
+  overflow: hidden;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  /* float: right; */
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.nav a:hover {
+  background-color: rgb(80, 77, 77);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav a:active {
+  background-color: turquoise;
+}
+
+.nav_link {
+  overflow: hidden;
+}
+
+.app-link {
+  margin-top: 1vmin;
+}
+
+.app-gecko {
+  height: 7vmin;
+  width: 7vmin;
+  pointer-events: none;
+  padding-top: 0.3vmin;
+  opacity: 0.8;
+}
+
+/* .p_gecko {
+  display: inline;
+  color: white;
+  padding-top: 5vmin;
+} */
+
+.p_header {
+  text-align: right;
+  margin-right: 5vmin;
+}
+
+.body {
+  display: flex;
+}
+
+.box1 {
+  display: inline-flex;
+  border: solid 2px;
+  border-color: sandybrown;
+  justify-content: center;
+  padding: 15vmin;
+  margin: 2vmin;
+  overflow: scroll;
+  height: 20px;
+  width: 20px;
+  /* display: inline-flex;
+  justify-content: center;
+  padding: 5vmin; */
+}
+
+.box2 {
+  display: inline-flex;
+  border: solid 2px;
+  border-color: turquoise;
+  justify-content: center;
+  padding: 15vmin;
+  margin: 2vmin;
+  overflow: scroll;
+  height: 20px;
+  width: 20px;
+}
+
+.box3 {
+  display: inline-flex;
+  border: solid 2px;
+  border-color: tomato;
+  justify-content: center;
+  padding: 15vmin;
+  margin: 2vmin;
+  overflow: scroll;
+  height: 20px;
+  width: 20px;
+}
+
+.crypto_terms {
+  color: white;
+  line-height: 5vmin;
+}
+
+.portfolio {
+  color: white;
+  line-height: 3vmin;
+}
+
+body {
+  background-color: rgb(70, 67, 67);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  color: white;
+  font-size: 1em;
+  flex-shrink: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media all and (min-width: 700px) {
+}
+
+/* DESKTOP */
+
+@media all and (min-width: 1130px) {
+}
