@@ -2,7 +2,6 @@
 
 Cryptocurrency Education
 
-**yarn start** from crypto-app folder in terminal
 
 Access site at www.thecryptocrib.com
 
