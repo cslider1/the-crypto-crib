@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Crypto #TheCryptoCrib</title>
+    <title>The Crypto Crib</title>
     <link rel="stylesheet" href="normalize/normalize.css" />
     <link
       href="http://fonts.googleapis.com/css?family=Nunito:400,300"
@@ -13,118 +13,128 @@
     <link rel="stylesheet" href="css/crypto.css" />
   </head>
 
-    <div class="app">
-        <nav class="nav">
-          <a class="nav a" href="http://www.thecryptocrib.com">
-            Home
-          </a>
-          <a class="nav a" href="http://www.thecryptocrib.com#">
-            About Us
-          </a>
-          <a class="nav a" href="http://www.thecryptocrib.com">
-            FAQs
-          </a>
-          <a class="nav_a" href="http://www.thecryptocrib.com">
-            Other
-          </a>
-          <a
-            class="app-link"
-            href="https://www.coingecko.com/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
-          </a>
-        </nav>
 
-    <body class="body">
-        <header class="app-header">
-            <div class="header-container">
-            <img class="app-logo" src="media/logo2.png" alt="logo" />
-            <p class="p_header">
-                <h2 class="h2">The Crypto Crib</h2>
-                <h3 class="h3">A new user's guide to cryptocurrencies</h3>
-            </p>
-            </div>
-        </header>
+  <nav class="nav">
+    <a class="nav a" href="http://www.thecryptocrib.com">
+      Home
+    </a>
+    <a class="nav a" href="http://www.thecryptocrib.com#">
+      About Us
+    </a>
+    <a class="nav a" href="http://www.thecryptocrib.com">
+      FAQs
+    </a>
+    <a class="nav_a" href="http://www.thecryptocrib.com">
+      Other
+    </a>
+    <a
+      class="app-link"
+      href="https://www.coingecko.com/en"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
+    </a>
+  </nav>
 
-        <div class="box1">
-            <a
-                class="app-link"
-                href="https://www.coingecko.com/en"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
-            CoinGecko
-            </a>
-        <br></br>
-        <br></br>
-        </div>
-        <div class="box2">
-        <p class="crypto_terms">
-            <h3>Crypto Terms</h3>
-            <strong>Cryptocurrency</strong> – digital currency that is
-            represented by a token and held for investment or traded on a
-            blockchain network.<br></br>
-            <strong>Altcoin</strong> – any cryptocurrency that is not Bitcoin.
-            There are over 9,000 altcoins as of 2021.<br></br>
-            <strong>Bitcoin (symbol: BTC)</strong> – launched in 2009 by
-            Satoshi Nakamoto as a platform for peer-to-peer electronic cash
-            transactions. Bitcoin solved the problem of double spending
-            through its proof-of-work consensus mechanism.<br></br>
-            <strong>Blockchain Technology</strong> – a decentralized
-            distributed ledger system that powers cryptocurrency transactions
-            and smart contracts. Transaction records are simultaneously stored
-            on multiple computers called nodes that are located throughout the
-            world. Every node must validate and agree on every transaction
-            which results in a secure blockchain network. Transactions on a
-            blockchain network are immutable which means they are not able to
-            be changed.<br></br>
-            <strong>Smart contract</strong> – a self-executing contract
-            between two or more parties with terms written into the code,
-            including event triggers to automatically execute those terms.
-            <br></br>
-            <strong>Digital Wallet</strong>– aka crypto wallet, hot wallet,
-            soft wallet, hard wallet, cold wallet – examples of hot/cold
-            <br></br>
-            <strong>Double spending</strong> – In digital cash, the potential
-            of someone spending the same token twice.<br></br>
-            <strong>Ethereum (symbol: ETH)</strong> – Proof-of-Work
-            cryptocurrency that is also a platform for other decentralized
-            applications to build on<br></br>
-            <strong>Satoshi Nakamoto</strong> – creator of Bitcoin, author of
-            the Bitcoin white paper; famously unknown – could be a man, a
-            woman, or a group of people
+  <body class="body">
+    <header class="app-header">
+        <div class="header-container">
+        <img class="app-logo" src="media/logo2.png" alt="logo" />
+        <p class="p_header">
+          <h2 class="h2">The Crypto Crib</h2>
+          <h3 class="h3">A new user's guide to cryptocurrencies</h3>
         </p>
         </div>
-        <div class="box3">
-        <p class="portfolio">
-            <h3>What is a Crypto Portfolio?</h3>
-            Like a traditional investment portfolio, a crypto portfolio is an
-            investor’s holdings in one or more cryptocurrencies. Sample
-            portfolio + allow user to create portfolio with api feed from
-            coingecko or something Search bar for any crypto that will load
-            full page/half page of data, historical price, etc
-        </p>
-        </div>
-        <div class="box4">
-        <p class="portfolio">
-            <h3>What is DeFi?</h3>
-            DeFi (or “decentralized finance”) is an umbrella term for
-            financial services on public blockchains, primarily Ethereum. With
-            DeFi, you can do most of the things that banks support — earn
-            interest, borrow, lend, buy insurance, trade derivatives, trade
-            assets, and more — but it’s faster and doesn’t require paperwork
-            or a third party. - Coinbase, July 2021.
-        </p>
-        </div>
-</div>
-    <footer class="footer">
-      <p style="text-align: center" font-size: 12px;>© 2021 #TheCryptoCrib</p>
-    </footer>
+    </header>
 
-    <script src="js/crypto.js"></script>
-  </body>
+    <div class="countdown">
+      <p>
+        Today's Date is: <label id="date"></label>
+        <br>
+        Countdown to CryptoCon 2021: <label id="countdown"></label>
+        <br>
+        Phoenix, AZ  Oct 31-Nov 2, 2021
+      </p>
+    </div>
+
+    <div class="box1">
+      <a
+          class="app-link"
+          href="https://www.coingecko.com/en"
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+          <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
+      CoinGecko
+      </a>
+    </div>
+
+    <div class="box2">
+      <p class="crypto_terms">
+          <h3>Crypto Terms</h3>
+          <strong>Cryptocurrency</strong> – digital currency that is
+          represented by a token and held for investment or traded on a
+          blockchain network.<br></br>
+          <strong>Altcoin</strong> – any cryptocurrency that is not Bitcoin.
+          There are over 9,000 altcoins as of 2021.<br></br>
+          <strong>Bitcoin (symbol: BTC)</strong> – launched in 2009 by
+          Satoshi Nakamoto as a platform for peer-to-peer electronic cash
+          transactions. Bitcoin solved the problem of double spending
+          through its proof-of-work consensus mechanism.<br></br>
+          <strong>Blockchain Technology</strong> – a decentralized
+          distributed ledger system that powers cryptocurrency transactions
+          and smart contracts. Transaction records are simultaneously stored
+          on multiple computers called nodes that are located throughout the
+          world. Every node must validate and agree on every transaction
+          which results in a secure blockchain network. Transactions on a
+          blockchain network are immutable which means they are not able to
+          be changed.<br></br>
+          <strong>Smart contract</strong> – a self-executing contract
+          between two or more parties with terms written into the code,
+          including event triggers to automatically execute those terms.
+          <br></br>
+          <strong>Digital Wallet</strong>– aka crypto wallet, hot wallet,
+          soft wallet, hard wallet, cold wallet – examples of hot/cold
+          <br></br>
+          <strong>Double spending</strong> – In digital cash, the potential
+          of someone spending the same token twice.<br></br>
+          <strong>Ethereum (symbol: ETH)</strong> – Proof-of-Work
+          cryptocurrency that is also a platform for other decentralized
+          applications to build on<br></br>
+          <strong>Satoshi Nakamoto</strong> – creator of Bitcoin, author of
+          the Bitcoin white paper; famously unknown – could be a man, a
+          woman, or a group of people
+      </p>
+    </div>
+
+    <div class="box3">
+      <p class="portfolio">
+          <h3>What is a Crypto Portfolio?</h3>
+          Like a traditional investment portfolio, a crypto portfolio is an
+          investor’s holdings in one or more cryptocurrencies. Sample
+          portfolio + allow user to create portfolio with api feed from
+          coingecko or something Search bar for any crypto that will load
+          full page/half page of data, historical price, etc
+      </p>
+    </div>
+    <div class="box4">
+      <p class="portfolio">
+          <h3>What is DeFi?</h3>
+          DeFi (or “decentralized finance”) is an umbrella term for
+          financial services on public blockchains, primarily Ethereum. With
+          DeFi, you can do most of the things that banks support — earn
+          interest, borrow, lend, buy insurance, trade derivatives, trade
+          assets, and more — but it’s faster and doesn’t require paperwork
+          or a third party. - Coinbase, July 2021.
+      </p>
+    </div>
+
+  <footer class="footer">
+    <p style="text-align: center" font-size: 12px;>© 2021 #TheCryptoCrib</p>
+  </footer>
+
+  <script src="js/crypto.js"></script>
+ </body>
 
 </html>
