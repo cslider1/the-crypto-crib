@@ -31,3 +31,34 @@ var x = setInterval(function () {
       "The date has passed. You missed it!";
   }
 }, 1000);
+
+async function getCoinGecko() {
+  let url =
+    "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd";
+  try {
+    let res = await fetch(url);
+    return await res.json();
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function renderCoinGecko() {
+  let prices = await getCoinGecko();
+  let html = "";
+  prices.forEach((price) => {
+    let htmlSegment = `<div class="price">
+                        <h3>${price.bitcoin}</h3>
+                        </div>`;
+    html += htmlSegment;
+  });
+}
+
+renderCoinGecko();
+
+// //Fetch CoinGecko API
+// let coingecko =
+//   "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd";
+
+// fetch (coingecko);
+//   .then();
