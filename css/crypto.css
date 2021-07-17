@@ -140,7 +140,7 @@
 
 .countdate {
   color: lightblue;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 1em;
 }
 
@@ -152,6 +152,7 @@
 
 .boxes {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -160,58 +161,59 @@
 
 .box1 {
   flex-grow: 1;
-  flex-basis: 0;
+  /* flex-basis: 0; */
   border: solid 2px;
   border-color: sandybrown;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
   overflow: scroll;
-  height: 20px;
-  width: 20px;
-  /* display: inline-flex;
-  justify-content: center;
-  padding: 5vmin; */
+  height: 4vh;
+  width: 76vw;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
 }
 
 .box2 {
   flex-grow: 1;
-  flex-basis: 0;
-  /* color: white; */
+  /* flex-basis: 0; */
   border: solid 2px;
   border-color: turquoise;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
   overflow: scroll;
-  height: 20px;
-  width: 20px;
+  height: 4vh;
+  width: 70vw;
 }
 
 .box3 {
   flex-grow: 1;
-  flex-basis: 0;
+  /* flex-basis: 1; */
   border: solid 2px;
   border-color: tomato;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
   overflow: scroll;
-  height: 20px;
-  width: 20px;
+  height: 4vh;
+  width: 70vw;
 }
 
 .box4 {
   flex-grow: 1;
-  flex-basis: 0;
+  /* flex-basis: 0; */
   border: solid 2px;
   border-color: wheat;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
   overflow: scroll;
-  height: 20px;
-  width: 20px;
+  height: 4vh;
+  width: 76vw;
 }
 
 .crypto_terms {
@@ -233,7 +235,29 @@ body {
 
 fieldset {
   color: white;
-  margin: 2em 15em;
+  border: solid 2px aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  margin: 2em 30em 2em 3em;
+  padding: 1em 2em 2em;
+}
+
+legend {
+  font-size: 1.4em;
+}
+
+.input {
+  margin: 0.5em 1em 0.5em 0;
+  padding: 0.3em 0 0.3em 0.2em;
+  border-radius: 5px;
+}
+
+.submit {
+  margin-top: 2em;
+  padding: 0.5em 2em;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .footer {
