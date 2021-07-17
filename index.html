@@ -44,7 +44,7 @@
           <div class="crib_header">
             <h2 class="h2">The Crypto Crib</h2>
             <h3 class="h3">A new user's guide to cryptocurrencies</h3>
-            <h4 class="date">Today's Date is: <label id="date"></label></h4>
+            <p class="date">Today's Date is: <label id="date"></label></p>
           </div>
           <!-- <div class="date">
             Today's Date is: <label id="date"></label>
@@ -52,22 +52,34 @@
         </div>
     </header>
 
-    <div class="countdown">
-      <!-- <div class="date">
-        Today's Date is: <label id="date"></label>
-      </div> -->
-      <div class="countdate">
-        Countdown to CryptoCon 2021: <label id="countdown"></label>
-      </div>
-      <div class="countdate"></div>
-        Phoenix, AZ  Oct 31-Nov 2, 2021
-      </div>
-    </div>
+
 
     <div class="boxes">
+
       <div class="box1">
-        <div class="geckoapi"></div>
-        <!-- <a
+        <label for="coins">Select a Coin</label>
+        <select class="u-full-width" id="coins"></select>
+
+        <div class="card"></div>
+
+      </div>
+
+    <!-- <div class="box1">
+        <label for="breeds">Select a Breed</label>
+        <select class="u-full-width" id="breeds"></select>
+
+        <form>
+          <label for="name">Name</label>
+          <input class="u-full-width" id="name" type="text">
+
+          <label for="comment">Comment</label>
+          <textarea class="u-full-width" id="comment"></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+
+        <div class="card"></div> -->
+     <!-- <a
             class="app-link"
             href="https://www.coingecko.com/en"
             target="_blank"
@@ -76,7 +88,6 @@
             <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
         CoinGecko
       </a> -->
-      </div>
 
       <div class="box2">
         <p class="crypto_terms">
@@ -138,6 +149,41 @@
         </p>
       </div>
     </div>
+
+    <div class="countdown">
+      <!-- <div class="date">
+        Today's Date is: <label id="date"></label>
+      </div> -->
+      <div class="countdate">
+        Countdown to <a class="countdate" href="http://cryptocon2021.com." onClick="return confirm('Linking to an external site. Click OK to continue.')">CryptoCon 2021</a>:  <label id="countdown" class="countlabel"></label>
+      </div>
+      <div class="countdate"></div>
+        Phoenix, AZ  Oct 31-Nov 2, 2021
+      </div>
+    </div>
+
+    <fieldset onload='document.form.text1.focus()'>
+      <legend><span> Would you like more information? </span></legend>
+      <p class="text">Fill in your name and email. We will send you our popular crypto newsletter, The Crib.</p>
+
+      <!-- <form name="form1" action="#">
+        <input type='text' name='text1'/>
+
+        <input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>
+    </form> -->
+
+
+      <form name="form1" action="#">
+        <input class="u-full-width" id="name" type="text" placeholder=" first name">
+        <input class="u-full-width" id="name" type="text" placeholder=" last name">
+        <input type='text' name='text1'  placeholder=" email"/>
+        <input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>
+      </form>
+        <!-- <input class="u-full-width" id="email" type="email" placeholder=" email">
+        <button class="button" id="button" type="button"><label for="submit">Submit</label></button> -->
+
+
+   </fieldset>
 
   <footer class="footer">
     <p style="text-align: center" font-size: 12px;>© 2021 #TheCryptoCrib</p>

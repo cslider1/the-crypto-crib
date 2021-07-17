@@ -55,7 +55,9 @@
 }
 
 .h3 {
-  font-size: 3vmin;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-top: -1em;
 }
 
 .nav {
@@ -138,7 +140,14 @@
 
 .countdate {
   color: lightblue;
+  font-weight: bold;
   margin-top: 1em;
+}
+
+.countlabel {
+  color: lightblue;
+  font-weight: lighter;
+  font-size: 0.9em;
 }
 
 .boxes {
@@ -222,10 +231,16 @@ body {
   flex-direction: column;
 }
 
+fieldset {
+  color: white;
+  margin: 2em 15em;
+}
+
 .footer {
   color: white;
   font-size: 1em;
   flex-shrink: 0;
+  margin-top: 2em;
 }
 
 /* MEDIA QUERIES */
