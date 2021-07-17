@@ -33,14 +33,14 @@ var x = setInterval(function () {
 }, 1000);
 
 // Fetch Dog Breeds
-const CoinGecko = require("coingecko-api");
-const CoinGeckoClient = new CoinGecko();
+// const CoinGecko = require("coingecko-api");
+// const CoinGeckoClient = new CoinGecko();
 
-var func = async () => {
-  let data = await CoinGeckoClient.coins.all();
-};
+// var func = async () => {
+//   let data = await CoinGeckoClient.coins.all();
+// };
 
-const select = document.getElementById("coins");
+// const select = document.getElementById("coins");
 // const card = document.querySelector(".card");
 
 // const select = document.getElementById("breeds");
@@ -51,13 +51,13 @@ const select = document.getElementById("coins");
 //  FETCH FUNCTIONS
 // ------------------------------------------
 
-function fetchData(url) {
-  return fetch(url).then((res) => res.json());
-}
+// function fetchData(url) {
+//   return fetch(url).then((res) => res.json());
+// }
 
-fetchData(
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc"
-).then((data) => generateOptions(data.message));
+// fetchData(
+//   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc"
+// ).then((data) => generateOptions(data.message));
 
 // fetchData("https://dog.ceo/api/breeds/image/random").then((data) =>
 //   generateImage(data.message)
@@ -67,42 +67,42 @@ fetchData(
 //  HELPER FUNCTIONS
 // ------------------------------------------
 
-function generateOptions(data) {
-  const options = data
-    .map(
-      (item) => `
-    <option value='${item}'>${item}</option>
-  `
-    )
-    .join("");
-  select.innerHTML = options;
-}
+// function generateOptions(data) {
+//   const options = data
+//     .map(
+//       (item) => `
+//     <option value='${item}'>${item}</option>
+//   `
+//     )
+//     .join("");
+//   select.innerHTML = options;
+// }
 
-function generateImage(data) {
-  const html = `
-    <img src='${data}' alt>
-    <p>Click to view images of ${select.value}s</p>
-  `;
-  card.innerHTML = html;
-}
+// function generateImage(data) {
+//   const html = `
+//     <img src='${data}' alt>
+//     <p>Click to view images of ${select.value}s</p>
+//   `;
+//   card.innerHTML = html;
+// }
 
-function fetchBreedImage() {
-  const breed = select.value;
-  const img = card.querySelector("img");
-  const p = card.querySelector("p");
+// function fetchBreedImage() {
+//   const breed = select.value;
+//   const img = card.querySelector("img");
+//   const p = card.querySelector("p");
 
-  fetchData(`https://dog.ceo/api/breed/${breed}/images/random`).then((data) => {
-    img.src = data.message;
-    img.alt = breed;
-    p.textContent = `Click to view more ${breed}s`;
-  });
-}
+//   fetchData(`https://dog.ceo/api/breed/${breed}/images/random`).then((data) => {
+//     img.src = data.message;
+//     img.alt = breed;
+//     p.textContent = `Click to view more ${breed}s`;
+//   });
+// }
 
 // ------------------------------------------
 //  EVENT LISTENERS
 // ------------------------------------------
-select.addEventListener("change", fetchBreedImage);
-card.addEventListener("click", fetchBreedImage);
+// select.addEventListener("change", fetchBreedImage);
+// card.addEventListener("click", fetchBreedImage);
 
 // ------------------------------------------
 //  POST DATA
@@ -119,4 +119,26 @@ function ValidateEmail(inputText) {
     alert("Invalid email address!");
     return false;
   }
+}
+
+// fetch(
+//   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+// ).then(console.log);
+
+// bind to select box change (maybe an event handler)
+function coinmarket(coinname) {
+  fetch(
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      // lowercase coinname and id for this > d.id === coinname
+      let coin = data.find((d) => d.id === coinname);
+      console.log(coin);
+      // render coin data here
+      // create wrapper div inside box1 div and append all the elements of json data I want
+      // use let for each element
+      let image = `<img src=${coin.image} />`;
+      document.getElementsByClassName("box1")[0].innerHTML = image;
+    });
 }

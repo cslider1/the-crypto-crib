@@ -167,7 +167,7 @@
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
-  overflow: scroll;
+  /* overflow: scroll; */
   height: 4vh;
   width: 76vw;
 }
