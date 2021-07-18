@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Crypto Crib</title>
-    <link rel="shortcut icon" href="http://the-crypto-crib/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="normalize/normalize.css" />
     <link
       href="http://fonts.googleapis.com/css?family=Nunito:400,300"
@@ -170,11 +170,13 @@
         <legend><span>&nbsp;Want to learn more?&nbsp;</span></legend>
         <p class="text">Submit your name and email to receive our popular newsletter, <strong>The Crib</strong>.</p>
 
-        <form name="form1" action="#">
-          <input class="input" id="name" type="text" placeholder=" first name">
-          <input class="input" id="name" type="text" placeholder=" last name">
-          <input class="input" type='text' name='text1'  placeholder=" email"><br>
-          <input class="submit" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>
+        <form name="form1">
+        <!-- <form id="formId" name="form1" action="#"> -->
+          <input class="input" name="topics" id="firstname" type="text" placeholder=" first name">
+          <input class="input" name="topics" id="lastname" type="text" placeholder=" last name">
+          <input class="input" name="topics" id="email" type='email' placeholder=" email"><br>
+          <button class="submit" type="submit" onclick="ValidateEmail(document.form1.email)">Submit</button>
+          <!-- <input class="submit" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1);process();"/> -->
         </form>
 
     </fieldset>

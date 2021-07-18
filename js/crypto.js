@@ -32,81 +32,11 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-// Fetch Dog Breeds
-// const CoinGecko = require("coingecko-api");
-// const CoinGeckoClient = new CoinGecko();
-
-// var func = async () => {
-//   let data = await CoinGeckoClient.coins.all();
-// };
-
-// const select = document.getElementById("coins");
-// const card = document.querySelector(".card");
-
-// const select = document.getElementById("breeds");
-// const card = document.querySelector(".card");
-// const form = document.querySelector("form");
-
-// ------------------------------------------
-//  FETCH FUNCTIONS
-// ------------------------------------------
-
-// function fetchData(url) {
-//   return fetch(url).then((res) => res.json());
-// }
-
-// fetchData(
-//   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc"
-// ).then((data) => generateOptions(data.message));
-
-// fetchData("https://dog.ceo/api/breeds/image/random").then((data) =>
-//   generateImage(data.message)
-// );
-
-// ------------------------------------------
-//  HELPER FUNCTIONS
-// ------------------------------------------
-
-// function generateOptions(data) {
-//   const options = data
-//     .map(
-//       (item) => `
-//     <option value='${item}'>${item}</option>
-//   `
-//     )
-//     .join("");
-//   select.innerHTML = options;
-// }
-
-// function generateImage(data) {
-//   const html = `
-//     <img src='${data}' alt>
-//     <p>Click to view images of ${select.value}s</p>
-//   `;
-//   card.innerHTML = html;
-// }
-
-// function fetchBreedImage() {
-//   const breed = select.value;
-//   const img = card.querySelector("img");
-//   const p = card.querySelector("p");
-
-//   fetchData(`https://dog.ceo/api/breed/${breed}/images/random`).then((data) => {
-//     img.src = data.message;
-//     img.alt = breed;
-//     p.textContent = `Click to view more ${breed}s`;
-//   });
-// }
-
 // ------------------------------------------
 //  EVENT LISTENERS
 // ------------------------------------------
 // select.addEventListener("change", fetchBreedImage);
 // card.addEventListener("click", fetchBreedImage);
-
-// ------------------------------------------
-//  POST DATA
-// ------------------------------------------
 
 // Validate Email with RegEx
 function ValidateEmail(inputText) {
@@ -121,9 +51,16 @@ function ValidateEmail(inputText) {
   }
 }
 
-// fetch(
-//   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-// ).then(console.log);
+// Capture Form Data and Store in Local File (FormData API)
+function handleSubmit(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const value = Object.fromEntries(data.entries());
+  // const value = data.get("email");
+  console.log({ value });
+}
+const form = document.querySelector("form");
+form.addEventListener("submit", handleSubmit);
 
 // bind to select box change (maybe an event handler)
 function coinmarket(coinname) {
