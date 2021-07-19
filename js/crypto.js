@@ -62,6 +62,16 @@ function handleSubmit(event) {
 const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
+const formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 0,
+});
+
+formatter.format(1000);
+formatter.format(10);
+formatter.format(123233000);
+
 // bind to select box change (maybe an event handler)
 function coinmarket(coinname) {
   fetch(
@@ -72,10 +82,23 @@ function coinmarket(coinname) {
       // lowercase coinname and id for this > d.id === coinname
       let coin = data.find((d) => d.id === coinname);
       console.log(coin);
+
       // render coin data here
       // create wrapper div inside box1 div and append all the elements of json data I want
       // use let for each element
       let image = `<img src=${coin.image} />`;
-      document.getElementsByClassName("box1")[0].innerHTML = image;
+      let name = `  ${coin.name}`;
+      let symbol = `  ${coin.symbol}`;
+      let price = `  ${coin.current_price}`;
+      let market_cap = `  ${coin.market_cap}`;
+      // document.getElementById("coinData")[0].innerHTML = image;
+      document.getElementsByClassName("symbol")[0].innerHTML = symbol;
+      document.getElementsByClassName("name")[0].innerHTML = name;
+      document.getElementsByClassName("price")[0].innerHTML = price;
+      document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        coinmarket();
+      });
     });
 }
