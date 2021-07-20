@@ -172,6 +172,39 @@
   width: 76vw;
 }
 
+.coinSelect {
+  color: white;
+  border: solid 2px sandybrown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  /* margin: 2em 30em 2em 3em;
+  padding: 1em 2em 2em;  */
+  /* padding: 1vmin; */
+  margin: 2vmin;
+  /* overflow: scroll; */
+  height: 30vh;
+  width: 80vw;
+}
+
+.fieldbox {
+  justify-content: center;
+  margin: 3vmin;
+}
+
+.coinData {
+  justify-content: space-between;
+  margin: 2vmin;
+}
+
+.select {
+  font-size: 0.9em;
+  /* margin: 1vmin; */
+}
+
+.name .symbol .price .market_cap {
+  margin: 1vmin;
+}
+
 .main {
   display: flex;
   flex-grow: 1;
@@ -194,7 +227,7 @@
   flex-grow: 1;
   /* flex-basis: 1; */
   border: solid 2px;
-  border-color: tomato;
+  border-color: turquoise;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
@@ -207,7 +240,7 @@
   flex-grow: 1;
   /* flex-basis: 0; */
   border: solid 2px;
-  border-color: wheat;
+  border-color: turquoise;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
@@ -233,9 +266,9 @@ body {
   flex-direction: column;
 }
 
-fieldset {
+.fieldform {
   color: white;
-  border: solid 2px aqua;
+  border: solid 2px sandybrown;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   margin: 2em 30em 2em 3em;

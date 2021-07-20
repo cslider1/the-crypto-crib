@@ -73,6 +73,8 @@ formatter.format(10);
 formatter.format(123233000);
 
 // bind to select box change (maybe an event handler)
+document.getElementById("list").addEventListener.onchange = coinmarket;
+
 function coinmarket(coinname) {
   fetch(
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
@@ -97,8 +99,8 @@ function coinmarket(coinname) {
       document.getElementsByClassName("price")[0].innerHTML = price;
       document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
 
-      document.addEventListener("DOMContentLoaded", function () {
-        coinmarket();
-      });
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   coinmarket();
+      // });
     });
 }

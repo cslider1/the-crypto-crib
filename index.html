@@ -68,18 +68,29 @@
 
     <div class="boxes">
 
-      <div class="box1">
-        <label for="coins">Select a Coin</label>
-        <select class="u-full-width" id="coins"></select>
+      <!-- <div class="box1"> -->
+      <fieldset class="coinSelect">
+        <legend><span>&nbsp;Learn about your favorite cryptocurrency&nbsp;</span></legend>
+        <div class="fieldbox">
+          <label for="coins">Select a Coin</label>
+          <!-- <select class="u-full-width" id="coins"></select> -->
+          <select class="select" id="list">
+            <option value="1">-- Select --</option>
+            <option value="2">Bitcoin</option>
+            <option value="3">Ethereum</option>
+            <option value="4">Tether</option>
+          </select>
 
-        <div class="coinData">
-          <!-- <div class="image"></div> -->
-          <label>Name:<div class="name"></div></label>
-          <label>Symbol:<div class="symbol"></div></label>
-          <label>Current Price:<div class="price"></div></label>
-          <label>Market Cap:<div class="market_cap"></div></label>
+          <div class="coinData">
+            <!-- <div class="image"></div> -->
+            <label>Name:<div class="name"></div></label>
+            <label>Symbol:<div class="symbol"></div></label>
+            <label>Current Price:<div class="price"></div></label>
+            <label>Market Cap:<div class="market_cap"></div></label>
+          </div>
         </div>
-      </div>
+      </fieldset>
+      <!-- </div> -->
 
 
     <div class="main">
@@ -147,7 +158,7 @@
     </div>
 
     <div class="form">
-      <fieldset onload='document.form.text1.focus()'>
+      <fieldset class="fieldform" onload='document.form.text1.focus()'>
         <legend><span>&nbsp;Want to learn more?&nbsp;</span></legend>
         <p class="text">Submit your name and email to receive our popular newsletter, <strong>The Crib</strong>.</p>
 
