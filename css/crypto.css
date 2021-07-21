@@ -1,24 +1,33 @@
-.nav {
+nav {
   /* display: flex;
   justify-content: space-evenly; */
   /* align-items: center; */
-  height: 8vmin;
-  padding-top: 1vmin;
-
   /* float: right; */
-  padding-left: 50em;
+  /* padding-left: 50em; */
+  /* background-color: rgb(46, 41, 41);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+
+  /* height: 8vmin;
+  padding-top: 1vmin;
+  overflow: hidden; */
+}
+
+#hamnav {
+  width: 100%;
+  color: white;
   background-color: rgb(46, 41, 41);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  overflow: hidden;
 }
 
-.hamitems {
+#hamitems {
   display: flex;
-  /* justify-content: space-evenly; */
   color: white;
   float: right;
-  display: block;
+  padding: 15px;
+  /* display: block; */
+  /* justify-content: space-evenly; */
   /* order: -1; */
   /* text-decoration: none; */
   /* font-size: 15px; */
@@ -26,15 +35,36 @@
   /* padding: 10px 10px; */
 }
 
-/* .hamitems a {
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems a {
   flex-grow: 1;
   flex-basis: 0;
-  font-size: 18px;
-  padding: 10px 15px;
   color: white;
   text-decoration: none;
+  font-size: 18px;
   text-align: center;
+  padding: 10px 25px;
+}
+
+#hamitems a:hover {
+  background-color: rgb(80, 77, 77);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* #hamitems a:active {
+  background-color: turquoise;
 } */
+
+/* .nav_link {
+  overflow: hidden;
+} */
+
+/* STICKY NAV */
 
 /* .scrollable b {
   font-family: "Special Elite", cursive;
@@ -55,30 +85,6 @@
   padding-top: 25px;
 }
 
-.nav a {
-  flex-grow: 1;
-  flex-basis: 0;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px 15px;
-}
-
-.nav a:hover {
-  background-color: rgb(80, 77, 77);
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.nav a:active {
-  background-color: turquoise;
-}
-
-.nav_link {
-  overflow: hidden;
-}
-
 .app-link {
   margin-top: 0vmin;
   padding: -1vmin;
@@ -91,11 +97,6 @@
   pointer-events: none;
   /* padding-top: 0.5vmin; */
   opacity: 0.8;
-}
-
-#nav label,
-#hamburger {
-  display: none;
 }
 
 .app-header {
@@ -272,6 +273,10 @@
   width: 80vw;
 }
 
+.select {
+  display: inline;
+}
+
 .fieldbox {
   justify-content: center;
   margin: 3vmin;
@@ -384,6 +389,7 @@ legend {
 .footer {
   color: white;
   font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-shrink: 0;
   margin-top: 2em;
 }
@@ -405,64 +411,44 @@ legend {
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
-  /* (B) HORIZONTAL MENU ITEMS */
-
-  /* .nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 8vmin;
-    padding-left: 100vmin;
-    background-color: rgb(46, 41, 41);
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    overflow: hidden;
-  }
-
-  .nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 10px;
-  }
-
-  .nav a:hover {
-    background-color: rgb(80, 77, 77);
-    font-weight: bold;
-    border-radius: 5px;
-  }
-
-  .nav a:active {
-    background-color: turquoise;
-  }
-
-  .nav_link {
-    overflow: hidden;
-  } */
-
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 1px solid #333;
+    font-size: 1em;
+    padding: 3px;
+    border-top: 1px solid white;
+    /* border-top: 1px solid #333; */
   }
+
   /* (B) SHOW HAMBURGER ICON */
-  #nav label {
+  #hamnav label {
     display: inline-block;
     color: white;
-    background: #a02620;
+    background-color: rgb(46, 41, 41);
+    /* background: #a02620; */
     font-style: normal;
-    font-size: 1.2em;
+    size: 2vmin;
     padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+    margin-right: 2em;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
   }
 
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25vmin;
+    height: 15vmin;
+    padding-bottom: 1em;
     border-bottom: solid 5px rgb(109, 231, 219);
     /* margin-top: 30vmin; */
     /* align-items: center;
@@ -523,13 +509,6 @@ legend {
     text-align: center;
   }
 
-  /* (C) TOGGLE SHOW/HIDE MENU */
-  /* #hamitems {
-  display: none;
-} */
-  /* #nav input:checked ~ #hamitems {
-    display: block;
-  } */
   /* #hamitems {
     display: flex;
   }
