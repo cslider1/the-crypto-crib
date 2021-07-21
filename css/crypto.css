@@ -1,3 +1,81 @@
+.nav {
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* align-items: center; */
+  height: 8vmin;
+  padding-top: 1vmin;
+
+  /* float: right; */
+  padding-left: 50em;
+  background-color: rgb(46, 41, 41);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* overflow: hidden; */
+}
+
+.hamitems {
+  display: flex;
+  /* justify-content: space-evenly; */
+  color: white;
+  float: right;
+  /* order: -1; */
+  /* text-decoration: none; */
+  /* font-size: 15px; */
+  /* text-align: center; */
+  /* padding: 10px 10px; */
+}
+
+.hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  /* float: right; */
+  /* padding: 10px; */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.nav a:hover {
+  background-color: rgb(80, 77, 77);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav a:active {
+  background-color: turquoise;
+}
+
+.nav_link {
+  overflow: hidden;
+}
+
+.app-link {
+  margin-top: 0vmin;
+  padding: -1vmin;
+}
+
+.app-gecko {
+  height: 6vmin;
+  width: 6vmin;
+  /* margin-top: 1vmin; */
+  pointer-events: none;
+  /* padding-top: 0.5vmin; */
+  opacity: 0.8;
+}
+
+#nav label,
+#hamburger {
+  display: none;
+}
+
 .app-header {
   background-color: rgb(46, 41, 41);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -14,8 +92,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 22vmin;
-  border-bottom: solid 6px rgb(109, 231, 219);
+  height: 25vmin;
+  border-bottom: solid 5px rgb(109, 231, 219);
   /* margin-top: 30vmin; */
   /* align-items: center;
   align-content: stretch; */
@@ -60,9 +138,8 @@
   margin-top: -1em;
 }
 
-.nav {
+/* .nav {
   display: flex;
-  /* justify-content: right; */
   justify-content: space-evenly;
   align-items: center;
   height: 8vmin;
@@ -70,8 +147,6 @@
   background-color: rgb(46, 41, 41);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* background-color: rgb(59, 54, 54); */
-  /* border-bottom: solid 5px lime; */
   overflow: hidden;
 }
 
@@ -79,7 +154,6 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  /* float: right; */
   text-align: center;
   padding: 10px 10px;
 }
@@ -96,19 +170,7 @@
 
 .nav_link {
   overflow: hidden;
-}
-
-.app-link {
-  margin-top: 1vmin;
-}
-
-.app-gecko {
-  height: 7vmin;
-  width: 7vmin;
-  pointer-events: none;
-  padding-top: 0.3vmin;
-  opacity: 0.8;
-}
+} */
 
 /* .p_gecko {
   display: inline;
@@ -120,6 +182,8 @@
   display: flex;
   /* justify-content: space-between; */
 }
+
+/* DATE and COUNTDOWN */
 
 .countdown {
   display: flex;
@@ -134,8 +198,8 @@
 .date {
   color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.7em;
-  margin: 0 0.2em 1.2em 0;
+  font-size: 0.8em;
+  margin-top: 1.2em;
 }
 
 .countdate {
@@ -202,7 +266,9 @@
 }
 
 .name .symbol .price .market_cap {
-  margin: 1vmin;
+  display: inline;
+  margin: 1em;
+  padding: 1em;
 }
 
 .main {
@@ -304,10 +370,166 @@ legend {
 
 /* TABLET */
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 769px) {
 }
 
-/* DESKTOP */
+/* MOBILE */
 
-@media all and (min-width: 1130px) {
+@media all and (max-width: 768px) {
+  #nav {
+    width: 100%;
+    background-color: rgb(46, 41, 41);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  /* (B) HORIZONTAL MENU ITEMS */
+
+  /* .nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vmin;
+    padding-left: 100vmin;
+    background-color: rgb(46, 41, 41);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  .nav a:hover {
+    background-color: rgb(80, 77, 77);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .nav a:active {
+    background-color: turquoise;
+  }
+
+  .nav_link {
+    overflow: hidden;
+  } */
+
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  /* (B) SHOW HAMBURGER ICON */
+  #nav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vmin;
+    border-bottom: solid 5px rgb(109, 231, 219);
+    /* margin-top: 30vmin; */
+    /* align-items: center;
+    align-content: stretch; */
+    /* add flex-wrap: wrap; for mobile-first */
+  }
+
+  /* .app-logo {
+    height: 20vmin;
+    padding-bottom: 5vmin;
+    margin-left: 10vmin;
+    margin-bottom: 8vmin;
+  } */
+
+  .app-logo {
+    display: none;
+  }
+
+  .crib_header {
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 2.5em;
+    /* text-align: center; */
+    /* margin-right: 2em; */
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+      animation: none;
+      height: 15vmin;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .coinSelect {
+    font-size: 0.8em;
+    margin: 1em 0.5em;
+    text-align: center;
+    /* height: 30em;
+    width: ; */
+  }
+
+  .fieldbox {
+    justify-content: left;
+    font-size: 1.2em;
+    margin: 3vmin;
+  }
+
+  .fieldform {
+    font-size: 1em;
+    margin: 2em 3em;
+    text-align: center;
+    padding: 1em 2em 2em;
+  }
+
+  .input {
+    text-align: center;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  /* #hamitems {
+  display: none;
+} */
+  /* #nav input:checked ~ #hamitems {
+    display: block;
+  } */
+  /* #hamitems {
+    display: flex;
+  }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #401408;
+  } */
+
+  /* (C) HIDE HAMBURGER */
+  /* #nav label,
+  #hamburger {
+    display: none;
+  } */
 }
+
+/* .app-link {
+  display: none;
+} */

@@ -16,26 +16,32 @@
 
 
   <nav class="nav">
-    <a class="nav a" href="http://www.thecryptocrib.com">
-      Home
-    </a>
-    <a class="nav a" href="http://www.thecryptocrib.com#">
-      About Us
-    </a>
-    <a class="nav a" href="http://www.thecryptocrib.com">
-      FAQs
-    </a>
-    <a class="nav_a" href="http://www.thecryptocrib.com">
-      Other
-    </a>
-    <a
-      class="app-link"
-      href="https://www.coingecko.com/en"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
-    </a>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+
+    <div id="hamitems">
+      <a class="nav a" href="http://www.thecryptocrib.com">
+        Home
+      </a>
+      <a class="nav a" href="http://www.thecryptocrib.com#">
+        About Us
+      </a>
+      <a class="nav a" href="http://www.thecryptocrib.com">
+        FAQs
+      </a>
+      <a class="nav_a" href="http://www.thecryptocrib.com">
+        Other
+      </a>
+      <!-- <a
+        class="app-link"
+        href="https://www.coingecko.com/en"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
+      </a> -->
+    </div>
+
   </nav>
 
   <body class="body">
@@ -45,18 +51,15 @@
           <div class="crib_header">
             <h2 class="h2">The Crypto Crib</h2>
             <h3 class="h3">A new user's guide to cryptocurrencies</h3>
-            <p class="date">Today's Date is: <label id="date"></label></p>
+            <!-- <p class="date">Today's Date is: <label id="date"></label></p> -->
           </div>
-          <!-- <div class="date">
-            Today's Date is: <label id="date"></label>
-          </div> -->
         </div>
     </header>
 
     <div class="countdown">
-      <!-- <div class="date">
+      <div class="date">
         Today's Date is: <label id="date"></label>
-      </div> -->
+      </div>
       <div class="countdate">
         Countdown to <a class="countdate" href="http://cryptocon2021.com." onClick="return confirm('Linking to an external site. Click OK to continue.')">CryptoCon 2021</a>:  <label id="countdown" class="countlabel"></label>
       </div>
