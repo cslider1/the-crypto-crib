@@ -429,7 +429,7 @@ legend {
     background-color: rgb(46, 41, 41);
     /* background: #a02620; */
     font-style: normal;
-    size: 2vmin;
+    font-size: 2em;
     padding: 10px;
   }
 
