@@ -1,18 +1,18 @@
 // Sticky Nav Bar
-window.onscroll = function () {
-  stickyNav();
-};
+// window.onscroll = function () {
+//   stickyNav();
+// };
 
-var nav = document.getElementById("hamitems");
-var sticky = nav.offsetTop;
+// var nav = document.getElementById("hamitems");
+// var sticky = nav.offsetTop;
 
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
-  }
-}
+// function stickyNav() {
+//   if (window.pageYOffset >= sticky) {
+//     nav.classList.add("sticky");
+//   } else {
+//     nav.classList.remove("sticky");
+//   }
+// }
 
 // Add Today's Date
 function dateAsString() {
@@ -22,7 +22,7 @@ function dateAsString() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  dateAsString();
+  dateAsString(); // doesn't need to be here
 });
 
 // Add Countdown Timer
@@ -48,12 +48,6 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-// ------------------------------------------
-//  EVENT LISTENERS
-// ------------------------------------------
-// select.addEventListener("change", fetchBreedImage);
-// card.addEventListener("click", fetchBreedImage);
-
 // Validate Email with RegEx
 function ValidateEmail(inputText) {
   var mailformat =
@@ -78,6 +72,7 @@ function handleSubmit(event) {
 const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
+// convert json integer to us dollar
 const formatter = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
@@ -89,6 +84,7 @@ formatter.format(10);
 formatter.format(123233000);
 
 // bind to select box change (maybe an event handler)
+// wrap it IFE so it will fire immediately
 document.getElementById("list").addEventListener.onchange = coinmarket;
 
 function coinmarket(coinname) {
@@ -107,9 +103,9 @@ function coinmarket(coinname) {
       let image = `<img src=${coin.image} />`;
       let name = `  ${coin.name}`;
       let symbol = `  ${coin.symbol}`;
-      let price = `  ${coin.current_price}`;
+      let price = `  ${coin.current_price}`; // wrap in formatter.format
       let market_cap = `  ${coin.market_cap}`;
-      // document.getElementById("coinData")[0].innerHTML = image;
+      // document.getElementsByClassName("image")[0].innerHTML = image;
       document.getElementsByClassName("symbol")[0].innerHTML = symbol;
       document.getElementsByClassName("name")[0].innerHTML = name;
       document.getElementsByClassName("price")[0].innerHTML = price;

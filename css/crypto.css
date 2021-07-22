@@ -1,17 +1,17 @@
-nav {
-  /* display: flex;
+/* nav { */
+/* display: flex;
   justify-content: space-evenly; */
-  /* align-items: center; */
-  /* float: right; */
-  /* padding-left: 50em; */
-  /* background-color: rgb(46, 41, 41);
+/* align-items: center; */
+/* float: right; */
+/* padding-left: 50em; */
+/* background-color: rgb(46, 41, 41);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
 
-  /* height: 8vmin;
+/* height: 8vmin;
   padding-top: 1vmin;
   overflow: hidden; */
-}
+/* } */
 
 #hamnav {
   width: 100%;
@@ -269,22 +269,26 @@ nav {
   /* padding: 1vmin; */
   margin: 2vmin;
   /* overflow: scroll; */
-  height: 30vh;
+  height: 15em;
   width: 80vw;
 }
 
 .select {
   display: inline;
+  margin-left: 1em;
+  padding: 0.5em 2em;
 }
 
 .fieldbox {
+  display: block;
   justify-content: center;
   margin: 3vmin;
 }
 
 .coinData {
   justify-content: space-between;
-  margin: 2vmin;
+  margin: 1em;
+  font-size: 1em;
 }
 
 .select {
@@ -292,8 +296,14 @@ nav {
   /* margin: 1vmin; */
 }
 
+.image {
+  width: 20px;
+  height: 20px;
+}
+
 .name .symbol .price .market_cap {
-  display: inline;
+  display: flex;
+  flex-direction: row;
   margin: 1em;
   padding: 1em;
 }
