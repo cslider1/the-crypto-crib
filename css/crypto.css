@@ -369,6 +369,78 @@ body {
   flex-direction: column;
 }
 
+/* QUIZ SECTION */
+.quiz {
+  color: white;
+  border: solid 2px tomato;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  margin: 2em 30em 2em 3em;
+  padding: 1em 2em 2em;
+  height: 20em;
+  width: 80vw;
+}
+#quizBox {
+  max-width: 600px;
+  margin: auto;
+}
+
+.quizHeader {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+.span {
+  margin: auto;
+}
+
+#quizQn {
+  padding: 20px;
+  background: gainsboro;
+  /* background: #4c93ba; */
+  color: rgb(175, 76, 58);
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+#quizAns {
+  margin: 10px 0;
+  color: dimgray;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+#quizAns input[type="radio"] {
+  display: none;
+}
+
+#quizAns label {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#quizAns label.correct {
+  background: #d8ffc4;
+  color: darkslategrey;
+  border: 1px solid #60a03f;
+}
+
+#quizAns label.wrong {
+  /* background: #ffe8e8; */
+  background: indianred;
+  color: black;
+  border: 1px solid #c78181;
+}
+
+/* FORM SECTION */
 .fieldform {
   color: white;
   border: solid 2px sandybrown;
