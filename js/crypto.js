@@ -66,78 +66,58 @@ function ValidateEmail(inputText) {
 }
 
 // Capture Form Data and Store in Local File (FormData API)
-function handleSubmit(event) {
-  event.preventDefault();
-  const data = new FormData(event.target);
-  const value = Object.fromEntries(data.entries());
-  // const value = data.get("email");
-  console.log({ value });
-}
-const form = document.querySelector("form");
-form.addEventListener("submit", handleSubmit);
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const data = new FormData(event.target);
+//   const value = Object.fromEntries(data.entries());
+//   // const value = data.get("email");
+//   console.log({ value });
+// }
+// const form = document.querySelector("form1");
+// form.addEventListener("submit", handleSubmit);
 
-// convert json integer to us dollar
-// const formatter = new Intl.NumberFormat("en-US", {
-//   style: "currency",
-//   currency: "USD",
-//   minimumFractionDigits: 0,
-// });
+let saveFile = () => {
+  const firstname = document.getElementById("firstname");
+  const lastname = document.getElementById("lastname");
+  const email = document.getElementById("email");
 
-// formatter.format(1000);
-// formatter.format(10);
-// formatter.format(123233000);
+  let data =
+    "\rFirst Name: " +
+    firstname.value +
+    "\r\n" +
+    "Last Name: " +
+    lastname.value +
+    "\r\n" +
+    "Email: " +
+    email.value;
 
-// bind to select box change (maybe an event handler)
-// wrap it IIFE so it will fire immediately
-// document.getElementById("list").addEventListener.onchange = coinmarket;
+  const textToBLOB = new Blob([data], { type: "text/plain" });
+  const sFileName = "cryptoFormData.txt";
 
-// (function coinmarket(coinname) {
-//   fetch(
-//     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-//   )
-//     .then((response) => response.json())
-//     .then((data) => {
-//       // lowercase coinname and id for this > d.id === coinname
-//       let coin = data.find((d) => d.id === coinname);
-//       console.log(coin);
+  let newLink = document.createElement("a");
+  newLink.download = sFileName;
 
-//       // render coin data here
-//       // create wrapper div inside box1 div and append all the elements of json data I want
-//       // use let for each element
-//       // let image = `<img src=${coin.image} />`;
-//       let name = `  ${coin.name}`;
-//       let symbol = `  ${coin.symbol}`;
-//       let price = `  ${coin.current_price}`; // wrap in formatter.format
-//       let market_cap = `  ${coin.market_cap}`;
-//       // document.getElementsByClassName("image")[0].innerHTML = image;
-//       document.getElementsByClassName("symbol")[0].innerHTML = symbol;
-//       document.getElementsByClassName("name")[0].innerHTML = name;
-//       document.getElementsByClassName("price")[0].innerHTML = price;
-//       document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
-//     });
-// })(coinmarket);
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  } else {
+    newLink.href = window.URL.createObjectURL(textToBLOB);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
 
-// const buttonElement = document.getElementById("btn");
+  newLink.click();
+};
 
-// // Add a handler for the 'click' event by providing a callback function.
-// // Whenever the element is clicked, a pop-up with "Element clicked!" will
-// // appear.
-// buttonElement.addEventListener("click", function (event) {
-//   alert("Element clicked through function!");
-// });
-
-// document
-//   .getElementById("list")
-//   .addEventListener("onchange", function (coinmarket) {
-//     console.log(alert);
-//   });
-
+// test button
 const selectElement = document.getElementById("btn");
 
 selectElement.addEventListener("click", function (event) {
   alert("Element clicked through function!");
 });
 
+// bind to select box change (maybe an event handler)
+// wrap it IIFE so it will fire immediately?
+// document.getElementById("list").addEventListener.onchange = coinmarket;
 function coinmarket(coinname) {
   fetch(
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"

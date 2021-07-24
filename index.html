@@ -177,7 +177,8 @@
           <input class="input" name="topics" id="firstname" type="text" placeholder=" first name">
           <input class="input" name="topics" id="lastname" type="text" placeholder=" last name">
           <input class="input" name="topics" id="email" type='email' placeholder=" email"><br>
-          <button class="submit" type="submit" onclick="ValidateEmail(document.form1.email)">Submit</button>
+          <input class="submit" type="button" id="bt" value="Submit" onclick="ValidateEmail(document.form1.email); saveFile()"/>
+          <!-- <button class="submit" type="submit" onclick="ValidateEmail(document.form1.email)";>Submit</button> -->
           <!-- <input class="submit" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1);process();"/> -->
         </form>
 
