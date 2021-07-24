@@ -119,7 +119,7 @@ var quiz = {
       a: 3,
     },
     {
-      q: "What is a digital agreement with predetermined and self-executing terms called?",
+      q: "What is a digital agreement with predetermined and self-executing terms?",
       o: ["Auto Contract", "Digital Wallet", "Smart Wallet", "Smart Contract"],
       a: 3,
     },
@@ -204,6 +204,11 @@ var quiz = {
   },
 };
 window.addEventListener("load", quiz.init);
+
+// Retake Quiz
+function refreshPage() {
+  window.location.reload();
+}
 
 // test button
 // const selectElement = document.getElementById("btn");

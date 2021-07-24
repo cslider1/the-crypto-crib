@@ -375,13 +375,13 @@ body {
   border: solid 2px tomato;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
-  margin: 2em 30em 2em 3em;
+  margin: 2em 2em 2em 10em;
   padding: 1em 2em 2em;
-  height: 20em;
-  width: 80vw;
+  height: 25em;
+  width: 60vw;
 }
 #quizBox {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -400,10 +400,13 @@ body {
   padding: 20px;
   background: gainsboro;
   /* background: #4c93ba; */
-  color: rgb(175, 76, 58);
+  /* color: rgb(133, 41, 25); */
+  color: rgb(4, 156, 158);
   text-align: center;
   font-size: 24px;
   border-radius: 10px;
+  border: solid 2px gray;
+  border-style: inset;
 }
 
 #quizAns {
@@ -428,16 +431,33 @@ body {
 }
 
 #quizAns label.correct {
-  background: #d8ffc4;
+  /* background: #d8ffc4; */
+  background: rgb(45, 236, 227);
   color: darkslategrey;
   border: 1px solid #60a03f;
 }
 
 #quizAns label.wrong {
   /* background: #ffe8e8; */
-  background: indianred;
+  background: maroon;
   color: black;
   border: 1px solid #c78181;
+}
+
+.quizbutton {
+  text-align: center;
+}
+
+#btn {
+  background: tomato;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-top: 2.5em;
+  height: 3em;
+  width: 12em;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* FORM SECTION */
@@ -446,7 +466,8 @@ body {
   border: solid 2px sandybrown;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
-  margin: 2em 30em 2em 3em;
+  margin: 2em 16em 2em 12em;
+  /* margin: 2em 30em 2em 3em; */
   padding: 1em 2em 2em;
 }
 
