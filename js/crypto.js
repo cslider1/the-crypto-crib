@@ -1,3 +1,4 @@
+// document.addEventListener("DOMContentLoaded", function () {
 // Sticky Nav Bar
 // window.onscroll = function () {
 //   stickyNav();
@@ -21,9 +22,12 @@ function dateAsString() {
   document.getElementById("date").innerHTML = n;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  dateAsString(); // doesn't need to be here
-});
+dateAsString();
+
+// document.addEventListener("DOMContentLoaded", function () {
+// dateAsString();
+// dateAsString(); // doesn't need to be here
+// });
 
 // Add Countdown Timer
 var countDownDate = new Date("Oct 31, 2021 13:00:37").getTime();
@@ -73,19 +77,66 @@ const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
 // convert json integer to us dollar
-const formatter = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-  minimumFractionDigits: 0,
-});
+// const formatter = new Intl.NumberFormat("en-US", {
+//   style: "currency",
+//   currency: "USD",
+//   minimumFractionDigits: 0,
+// });
 
-formatter.format(1000);
-formatter.format(10);
-formatter.format(123233000);
+// formatter.format(1000);
+// formatter.format(10);
+// formatter.format(123233000);
 
 // bind to select box change (maybe an event handler)
-// wrap it IFE so it will fire immediately
-document.getElementById("list").addEventListener.onchange = coinmarket;
+// wrap it IIFE so it will fire immediately
+// document.getElementById("list").addEventListener.onchange = coinmarket;
+
+// (function coinmarket(coinname) {
+//   fetch(
+//     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
+//   )
+//     .then((response) => response.json())
+//     .then((data) => {
+//       // lowercase coinname and id for this > d.id === coinname
+//       let coin = data.find((d) => d.id === coinname);
+//       console.log(coin);
+
+//       // render coin data here
+//       // create wrapper div inside box1 div and append all the elements of json data I want
+//       // use let for each element
+//       // let image = `<img src=${coin.image} />`;
+//       let name = `  ${coin.name}`;
+//       let symbol = `  ${coin.symbol}`;
+//       let price = `  ${coin.current_price}`; // wrap in formatter.format
+//       let market_cap = `  ${coin.market_cap}`;
+//       // document.getElementsByClassName("image")[0].innerHTML = image;
+//       document.getElementsByClassName("symbol")[0].innerHTML = symbol;
+//       document.getElementsByClassName("name")[0].innerHTML = name;
+//       document.getElementsByClassName("price")[0].innerHTML = price;
+//       document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
+//     });
+// })(coinmarket);
+
+// const buttonElement = document.getElementById("btn");
+
+// // Add a handler for the 'click' event by providing a callback function.
+// // Whenever the element is clicked, a pop-up with "Element clicked!" will
+// // appear.
+// buttonElement.addEventListener("click", function (event) {
+//   alert("Element clicked through function!");
+// });
+
+// document
+//   .getElementById("list")
+//   .addEventListener("onchange", function (coinmarket) {
+//     console.log(alert);
+//   });
+
+const selectElement = document.getElementById("btn");
+
+selectElement.addEventListener("click", function (event) {
+  alert("Element clicked through function!");
+});
 
 function coinmarket(coinname) {
   fetch(
@@ -100,7 +151,7 @@ function coinmarket(coinname) {
       // render coin data here
       // create wrapper div inside box1 div and append all the elements of json data I want
       // use let for each element
-      let image = `<img src=${coin.image} />`;
+      // let image = `<img src=${coin.image} />`;
       let name = `  ${coin.name}`;
       let symbol = `  ${coin.symbol}`;
       let price = `  ${coin.current_price}`; // wrap in formatter.format
@@ -110,9 +161,20 @@ function coinmarket(coinname) {
       document.getElementsByClassName("name")[0].innerHTML = name;
       document.getElementsByClassName("price")[0].innerHTML = price;
       document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
-
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   coinmarket();
-      // });
     });
 }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   coinmarket();
+// });
+
+// const formatter = new Intl.NumberFormat("en-US", {
+//   style: "currency",
+//   currency: "USD",
+//   minimumFractionDigits: 0,
+// });
+
+// formatter.format();
+// formatter.format(10);
+// formatter.format(123233000);
+// });
