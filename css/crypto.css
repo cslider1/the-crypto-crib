@@ -125,9 +125,9 @@
 
 .app-logo {
   /* display: flex; */
-  height: 20vmin;
+  height: 23vmin;
   padding-bottom: 5vmin;
-  margin-left: 10vmin;
+  margin-left: 12vmin;
   margin-bottom: 8vmin;
   /* padding-top: 30px;
   padding-right: 20px; */
@@ -259,27 +259,27 @@
   width: 76vw;
 }
 
-.coinSelect {
+/* .coinSelect {
   color: white;
   border: solid 2px sandybrown;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
-  /* margin: 2em 30em 2em 3em;
-  padding: 1em 2em 2em;  */
-  /* padding: 1vmin; */
   margin: 2vmin;
-  /* overflow: scroll; */
   height: 15em;
   width: 80vw;
-}
+} */
+/* margin: 2em 30em 2em 3em;
+  padding: 1em 2em 2em;
+  padding: 1vmin;
+  overflow: scroll; */
 
-.select {
+/* .select {
   display: inline;
   margin-left: 1em;
   padding: 0.5em 2em;
-}
+} */
 
-.fieldbox {
+/* .fieldbox {
   display: block;
   justify-content: center;
   margin: 3vmin;
@@ -293,7 +293,6 @@
 
 .select {
   font-size: 0.9em;
-  /* margin: 1vmin; */
 }
 
 .image {
@@ -306,7 +305,7 @@
   flex-direction: row;
   margin: 1em;
   padding: 1em;
-}
+} */
 
 .main {
   display: flex;
@@ -317,7 +316,7 @@
   flex-grow: 1;
   /* flex-basis: 0; */
   border: solid 2px;
-  border-color: turquoise;
+  border-color: sandybrown;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
@@ -330,7 +329,7 @@
   flex-grow: 1;
   /* flex-basis: 1; */
   border: solid 2px;
-  border-color: turquoise;
+  border-color: sandybrown;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
@@ -343,7 +342,7 @@
   flex-grow: 1;
   /* flex-basis: 0; */
   border: solid 2px;
-  border-color: turquoise;
+  border-color: sandybrown;
   justify-content: center;
   padding: 15vmin;
   margin: 2vmin;
@@ -372,7 +371,7 @@ body {
 /* QUIZ SECTION */
 .quiz {
   color: white;
-  border: solid 2px tomato;
+  border: solid 2px turquoise;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   margin: 2em 2em 2em 10em;
@@ -392,7 +391,7 @@ body {
   margin-bottom: 2em;
 }
 
-.span {
+#spanquiz {
   margin: auto;
 }
 
@@ -449,7 +448,7 @@ body {
 }
 
 #btn {
-  background: tomato;
+  background: sandybrown;
   color: white;
   font-size: 18px;
   font-weight: bolder;
@@ -457,6 +456,7 @@ body {
   height: 3em;
   width: 12em;
   border-radius: 10px;
+  border: solid 2px darkturquoise;
   cursor: pointer;
 }
 

@@ -55,7 +55,8 @@
           <img class="app-logo" src="media/logo2.png" alt="logo" />
           <div class="crib_header">
             <h2 class="h2">The Crypto Crib</h2>
-            <h3 class="h3">A new user's guide to cryptocurrencies</h3>
+            <h3 class="h3">A rookie's guide to cryptocurrencies</h3>
+
             <!-- <p class="date">Today's Date is: <label id="date"></label></p> -->
           </div>
         </div>
@@ -73,7 +74,6 @@
         Phoenix, AZ  Oct 31-Nov 2, 2021
       </div>
     </div>
-
 
     <div class="boxes">
 
@@ -154,6 +154,8 @@
       </div>
     </div>
 
+    <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,2010,52,3408,74,6636,4687,7083,1831,2,5426,1975" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+
       <div class="box4">
         <p class="portfolio">
             <h3>What is DeFi?</h3>
@@ -167,9 +169,9 @@
       </div>
 
       <fieldset class="quiz">
-        <legend><span class="span">&nbsp;How much did you learn?&nbsp;</span></legend>
+        <legend><span id="spanquiz">&nbsp;How much did you learn?&nbsp;</span></legend>
           <div id="quizBox">
-            <p class=quizHeader>Test your knowledge with our 5 question quiz:</p>
+            <p class=quizHeader>Test your knowledge with our short quiz !</p>
           </div>
           <div class="quizbutton">
             <input class="quizbutton" type="button" id="btn" value="Restart Quiz" onclick="refreshPage()"/>
@@ -216,6 +218,7 @@
   </footer>
 
   <script src="js/crypto.js"></script>
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
  </body>
 
 </html>
