@@ -23,32 +23,20 @@
     <input type="checkbox" id="hamburger"/>
 
     <div id="hamitems">
-      <a class="nav a" href="http://www.thecryptocrib.com">
+      <a class="nav a" href="index.html">
         Home
       </a>
-      <a class="nav a" href="http://www.thecryptocrib.com#">
+      <a class="nav a" href="about.html">
         About
       </a>
-      <a class="nav a" href="http://www.thecryptocrib.com">
+      <a class="nav a" href="faq.html">
         FAQs
       </a>
-      <a class="nav a" href="http://www.thecryptocrib.com">
+      <a class="nav a" href="other.html">
         Other
       </a>
-      <!-- <a
-        class="app-link"
-        href="https://www.coingecko.com/en"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img class="app-gecko" src="media/logocoingecko.png" alt="CoinGecko" />
-      </a> -->
     </div>
   </nav>
-
-  <!-- <div class="scrollable"
-            style="padding:15px 15px 4500px;"> -->
-
 
     <header class="app-header">
         <div class="header-container">
@@ -56,8 +44,6 @@
           <div class="crib_header">
             <h2 class="h2">The Crypto Crib</h2>
             <h3 class="h3">A rookie's guide to cryptocurrencies</h3>
-
-            <!-- <p class="date">Today's Date is: <label id="date"></label></p> -->
           </div>
         </div>
     </header>
@@ -75,33 +61,31 @@
       </div>
     </div>
 
-    <div class="boxes">
+    <!-- <div class="boxes"> -->
+      <div class="box1">
+        <p class="portfolio">
+            <h3>What is Crypto?</h3>
+          Crypto is short for Cryptography which is the study or process of creating secret code.
+          Crypto is also short for Cryptocurrency which is a digital currency that utilizes
+          cryptography and a decentralized monetary system.<br>
+          <br>
+          What is a crib?  A baby’s cradle?  A place to crash for the night?<br>
+          <br>
+          As described by <a href="https://en.wikipedia.org/wiki/Known-plaintext_attack" style="color: lightblue; text-decoration:none">Wikipedia</a>, a crib is “a plain language (or code) passage of any length,
+          usually obtained by solving one or more cipher or code messages, and occurring or believed
+          likely to occur in a different cipher or code message, which it may provide a means of
+          solving.”<br>
+          <br>
+          Cribbing means to figure out the crib after it has been encoded as ciphertext (secret code). But you have to know some partial information about the crib,
+          such as it’s first or last character or how many characters it has in total.
+          A Crypto Crib, therefore, is a place for your Bitcoin to crash, right?<br>
+          <br>
+          Not really. It just means we are going to discuss the secrets of cryptocurrencies - right here in The Crypto Crib.
+        </p>
+      </div>
 
-      <!-- <div class="box1">
-      <fieldset class="coinSelect">
-        <legend><span>&nbsp;Learn about your favorite cryptocurrency&nbsp;</span></legend>
-        <div class="fieldbox">
-          <label for="coins">Select a Coin</label>
-          <select class="select" id="list">
-            <option value="1">-- Select --</option>
-            <option value="2">Bitcoin</option>
-            <option value="3">Ethereum</option>
-            <option value="4">Tether</option>
-          </select>
-
-          <div class="coinData">
-            <div class="image"></div>
-            <label>Name:<div class="name"></div></label><br>
-            <label>Symbol:<div class="symbol"></div></label><br>
-            <label>Current Price:<div class="price"></div></label><br>
-            <label>Market Cap:<div class="market_cap"></div></label>
-          </div>
-        </div>
-        <button id="btn" onclick="coinmarket(bitcoin)">Click here!</button>
-        <i class="fas fa-search"></i>
-      </fieldset>
-      </div> -->
-
+      <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,2010,52,3408,74,6636,4687,7083,1831,2,5426,1975" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+    <!-- </div> -->
 
     <div class="main">
       <div class="box2">
@@ -136,6 +120,12 @@
             <strong>Ethereum (symbol: ETH)</strong> – Proof-of-Work
             cryptocurrency that is also a platform for other decentralized
             applications to build on<br></br>
+            <strong>DeFi</strong> (or “decentralized finance”) is an umbrella term for
+            financial services on public blockchains, primarily Ethereum. With
+            DeFi, you can do most of the things that banks support — earn
+            interest, borrow, lend, buy insurance, trade derivatives, trade
+            assets, and more — but it’s faster and doesn’t require paperwork
+            or a third party. - Coinbase, July 2021.
             <strong>Satoshi Nakamoto</strong> – creator of Bitcoin, author of
             the Bitcoin white paper; famously unknown – could be a man, a
             woman, or a group of people
@@ -154,20 +144,6 @@
       </div>
     </div>
 
-    <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,2010,52,3408,74,6636,4687,7083,1831,2,5426,1975" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
-
-      <div class="box4">
-        <p class="portfolio">
-            <h3>What is DeFi?</h3>
-            DeFi (or “decentralized finance”) is an umbrella term for
-            financial services on public blockchains, primarily Ethereum. With
-            DeFi, you can do most of the things that banks support — earn
-            interest, borrow, lend, buy insurance, trade derivatives, trade
-            assets, and more — but it’s faster and doesn’t require paperwork
-            or a third party. - Coinbase, July 2021.
-        </p>
-      </div>
-
       <fieldset class="quiz">
         <legend><span id="spanquiz">&nbsp;How much did you learn?&nbsp;</span></legend>
           <div id="quizBox">
@@ -178,40 +154,20 @@
             <!-- <button onclick="refreshPage();">Take quiz again</button> -->
           </div>
       </fieldset>
-    </div>
 
-      <!-- <div id="quizQn">QUESTION HERE</div>
-            <div id="quizAns">
-              <input type="radio" name="quiz" id="quizo0">
-              <label for="quizo0" data-idx="0">OPTION 1</label>
-
-              <input type="radio" name="quiz" id="quizo1">
-              <label for="quizo1" data-idx="1">OPTION 2</label>
-
-              <input type="radio" name="quiz" id="quizo2">
-              <label for="quizo2" data-idx="2">OPTION 3</label>
-
-              <input type="radio" name="quiz" id="quizo3">
-              <label for="quizo3" data-idx="3">OPTION 4</label>
-            </div> -->
 
     <div class="form">
       <fieldset class="fieldform" onload='document.form.text1.focus()'>
         <legend><span>&nbsp;Want to learn more?&nbsp;</span></legend>
         <p class="text">Submit your name and email to receive our popular newsletter, <strong>The Crib</strong>.</p>
-
         <form name="form1">
-        <!-- <form id="formId" name="form1" action="#"> -->
           <input class="input" name="topics" id="firstname" type="text" placeholder=" first name">
           <input class="input" name="topics" id="lastname" type="text" placeholder=" last name">
           <input class="input" name="topics" id="email" type='email' placeholder=" email"><br>
           <input class="submit" type="button" id="bt" value="Submit" onclick="ValidateEmail(document.form1.email); saveFile()"/>
-          <!-- <button class="submit" type="submit" onclick="ValidateEmail(document.form1.email)";>Submit</button> -->
-          <!-- <input class="submit" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1);process();"/> -->
         </form>
-
-    </fieldset>
-   </div>
+      </fieldset>
+    </div>
 
   <footer class="footer">
     <p style="text-align: center" font-size: 12px;>© 2021 #TheCryptoCrib</p>

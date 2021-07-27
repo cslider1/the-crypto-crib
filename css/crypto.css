@@ -237,119 +237,76 @@
   font-size: 0.9em;
 }
 
-.boxes {
+/* .boxes {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   margin: 2em;
-}
+} */
+
+/* .box1 {
+  flex-grow: 1;
+  border: solid 2px;
+  border-color: sandybrown;
+  justify-content: center;
+  padding: 15vmin;
+  margin: 2vmin;
+  height: 4vh;
+  width: 76vw;
+} */
 
 .box1 {
   flex-grow: 1;
   /* flex-basis: 0; */
-  border: solid 2px;
-  border-color: sandybrown;
-  justify-content: center;
-  padding: 15vmin;
-  margin: 2vmin;
-  /* overflow: scroll; */
-  height: 4vh;
-  width: 76vw;
-}
-
-/* .coinSelect {
-  color: white;
-  border: solid 2px sandybrown;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
-  margin: 2vmin;
-  height: 15em;
-  width: 80vw;
-} */
-/* margin: 2em 30em 2em 3em;
-  padding: 1em 2em 2em;
-  padding: 1vmin;
-  overflow: scroll; */
-
-/* .select {
-  display: inline;
-  margin-left: 1em;
-  padding: 0.5em 2em;
-} */
-
-/* .fieldbox {
-  display: block;
+  color: white;
+  background: rgb(88, 83, 83);
+  border: solid 4px;
+  border-color: sandybrown;
+  border-style: outset;
   justify-content: center;
-  margin: 3vmin;
+  padding: 1em 2em;
+  margin: 2vmin auto;
+  /* margin: 2vmin; */
+  /* overflow: scroll; */
+  height: 45vh;
+  width: 80vw;
 }
-
-.coinData {
-  justify-content: space-between;
-  margin: 1em;
-  font-size: 1em;
-}
-
-.select {
-  font-size: 0.9em;
-}
-
-.image {
-  width: 20px;
-  height: 20px;
-}
-
-.name .symbol .price .market_cap {
-  display: flex;
-  flex-direction: row;
-  margin: 1em;
-  padding: 1em;
-} */
 
 .main {
   display: flex;
   flex-grow: 1;
+  color: white;
 }
 
-.box2 {
-  flex-grow: 1;
-  /* flex-basis: 0; */
-  border: solid 2px;
-  border-color: sandybrown;
-  justify-content: center;
-  padding: 15vmin;
-  margin: 2vmin;
-  overflow: scroll;
-  height: 4vh;
-  width: 70vw;
-}
-
+.box2,
 .box3 {
-  flex-grow: 1;
-  /* flex-basis: 1; */
-  border: solid 2px;
-  border-color: sandybrown;
-  justify-content: center;
-  padding: 15vmin;
-  margin: 2vmin;
-  overflow: scroll;
-  height: 4vh;
-  width: 70vw;
-}
-
-.box4 {
-  flex-grow: 1;
+  flex-direction: row;
+  /* flex-grow: 1; */
   /* flex-basis: 0; */
   border: solid 2px;
   border-color: sandybrown;
   justify-content: center;
+  padding: 2em;
+  margin: 3vmin 15vmin;
+  overflow: scroll;
+  height: 30vh;
+  width: 40vw;
+}
+
+/* .box3 {
+  flex-direction: row;
+  border: solid 2px;
+  border-color: sandybrown;
+  justify-content: center;
   padding: 15vmin;
-  margin: 2vmin;
+  margin: 3vmin 5vmin;
   overflow: scroll;
   height: 4vh;
-  width: 76vw;
-}
+  width: 40vw;
+} */
 
 .crypto_terms {
   color: white;
@@ -379,6 +336,7 @@ body {
   height: 25em;
   width: 60vw;
 }
+
 #quizBox {
   max-width: 700px;
   margin: auto;
@@ -495,6 +453,37 @@ legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-shrink: 0;
   margin-top: 2em;
+}
+
+/* PAGE UNDER CONSTRUCTION */
+
+.construction {
+  color: white;
+  border: solid 2px turquoise;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  margin: 3em auto;
+  padding: 1em 2em 2em;
+  text-align: center;
+  height: 20em;
+  width: 40vw;
+}
+
+#constructBox {
+  max-width: 700px;
+  margin: 2em;
+  text-align: center;
+}
+
+.constructImage {
+  margin: auto;
+}
+
+.constructHeader {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 1em;
 }
 
 /* MEDIA QUERIES */
