@@ -104,6 +104,16 @@ var quiz = {
       a: 1,
     },
     {
+      q: "What is DeFi?",
+      o: [
+        "Deliberate Finance",
+        "Delicate Fish",
+        "Disco Fever",
+        "Decentralized Finance",
+      ],
+      a: 3,
+    },
+    {
       q: "What was the first purchase Bitcoin was used for in 2011?",
       o: ["automobile", "new house", "pizza", "more Bitcoin"],
       a: 2,
@@ -116,11 +126,6 @@ var quiz = {
     {
       q: "How many cryptocurrencies are there besides Bitcoin?",
       o: ["About 50", "About 250", "About 2,500", "About 9,000"],
-      a: 3,
-    },
-    {
-      q: "What is a digital agreement with predetermined and self-executing terms?",
-      o: ["Auto Contract", "Digital Wallet", "Smart Wallet", "Smart Contract"],
       a: 3,
     },
   ],

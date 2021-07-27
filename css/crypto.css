@@ -1,18 +1,3 @@
-/* nav { */
-/* display: flex;
-  justify-content: space-evenly; */
-/* align-items: center; */
-/* float: right; */
-/* padding-left: 50em; */
-/* background-color: rgb(46, 41, 41);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-
-/* height: 8vmin;
-  padding-top: 1vmin;
-  overflow: hidden; */
-/* } */
-
 #hamnav {
   width: 100%;
   color: white;
@@ -26,13 +11,6 @@
   color: white;
   float: right;
   padding: 15px;
-  /* display: block; */
-  /* justify-content: space-evenly; */
-  /* order: -1; */
-  /* text-decoration: none; */
-  /* font-size: 15px; */
-  /* text-align: center; */
-  /* padding: 10px 10px; */
 }
 
 #hamnav label,
@@ -56,35 +34,6 @@
   border-radius: 5px;
 }
 
-/* #hamitems a:active {
-  background-color: turquoise;
-} */
-
-/* .nav_link {
-  overflow: hidden;
-} */
-
-/* STICKY NAV */
-
-/* .scrollable b {
-  font-family: "Special Elite", cursive;
-  font-size: 28px;
-} */
-
-.sticky {
-  position: fixed;
-  top: 0.5;
-  /* width: 100%; */
-  padding-top: 15px;
-  padding-bottom: 150px;
-  background-color: none;
-  /* background-color: rgb(70, 67, 67); */
-}
-
-.sticky + .body {
-  padding-top: 25px;
-}
-
 .app-link {
   margin-top: 0vmin;
   padding: -1vmin;
@@ -93,9 +42,7 @@
 .app-gecko {
   height: 6vmin;
   width: 6vmin;
-  /* margin-top: 1vmin; */
   pointer-events: none;
-  /* padding-top: 0.5vmin; */
   opacity: 0.8;
 }
 
@@ -117,22 +64,13 @@
   align-items: center;
   height: 25vmin;
   border-bottom: solid 5px rgb(109, 231, 219);
-  /* margin-top: 30vmin; */
-  /* align-items: center;
-  align-content: stretch; */
-  /* add flex-wrap: wrap; for mobile-first */
 }
 
 .app-logo {
-  /* display: flex; */
   height: 23vmin;
   padding-bottom: 5vmin;
   margin-left: 12vmin;
   margin-bottom: 8vmin;
-  /* padding-top: 30px;
-  padding-right: 20px; */
-  /* order: -1; */
-  /* pointer-events: none; */
 }
 
 .crib_header {
@@ -161,49 +99,8 @@
   margin-top: -1em;
 }
 
-/* .nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 8vmin;
-  padding-left: 100vmin;
-  background-color: rgb(46, 41, 41);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  overflow: hidden;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-.nav a:hover {
-  background-color: rgb(80, 77, 77);
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.nav a:active {
-  background-color: turquoise;
-}
-
-.nav_link {
-  overflow: hidden;
-} */
-
-/* .p_gecko {
-  display: inline;
-  color: white;
-  padding-top: 5vmin;
-} */
-
 .body {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 /* DATE and COUNTDOWN */
@@ -227,7 +124,6 @@
 
 .countdate {
   color: lightblue;
-  /* font-weight: bold; */
   margin-top: 1em;
 }
 
@@ -237,76 +133,54 @@
   font-size: 0.9em;
 }
 
-/* .boxes {
+.boxes {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  margin: 2em;
-} */
-
-/* .box1 {
-  flex-grow: 1;
-  border: solid 2px;
-  border-color: sandybrown;
-  justify-content: center;
-  padding: 15vmin;
-  margin: 2vmin;
-  height: 4vh;
-  width: 76vw;
-} */
+}
 
 .box1 {
-  flex-grow: 1;
-  /* flex-basis: 0; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   background: rgb(88, 83, 83);
-  border: solid 4px;
-  border-color: sandybrown;
+  border: solid 4px sandybrown;
   border-style: outset;
-  justify-content: center;
+  text-align: justify;
+  text-justify: distribute;
   padding: 1em 2em;
   margin: 2vmin auto;
-  /* margin: 2vmin; */
-  /* overflow: scroll; */
-  height: 45vh;
+  height: 50vh;
   width: 80vw;
+}
+
+.widget {
+  padding-top: 2vmin;
 }
 
 .main {
   display: flex;
-  flex-grow: 1;
+  flex-direction: row;
   color: white;
+}
+
+.arrows {
+  margin: auto;
+  font-size: 40px;
 }
 
 .box2,
 .box3 {
-  flex-direction: row;
-  /* flex-grow: 1; */
-  /* flex-basis: 0; */
-  border: solid 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 3px;
+  border-style: outset;
   border-color: sandybrown;
+  background: rgb(88, 83, 83);
   justify-content: center;
   padding: 2em;
-  margin: 3vmin 15vmin;
+  margin: 3vmin 12vmin;
   overflow: scroll;
   height: 30vh;
   width: 40vw;
 }
-
-/* .box3 {
-  flex-direction: row;
-  border: solid 2px;
-  border-color: sandybrown;
-  justify-content: center;
-  padding: 15vmin;
-  margin: 3vmin 5vmin;
-  overflow: scroll;
-  height: 4vh;
-  width: 40vw;
-} */
 
 .crypto_terms {
   color: white;
@@ -315,7 +189,14 @@
 
 .portfolio {
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-justify: distribute;
   line-height: 3vmin;
+}
+
+#pizza {
+  text-align: center;
+  font-size: 5em;
 }
 
 body {
@@ -356,8 +237,6 @@ body {
 #quizQn {
   padding: 20px;
   background: gainsboro;
-  /* background: #4c93ba; */
-  /* color: rgb(133, 41, 25); */
   color: rgb(4, 156, 158);
   text-align: center;
   font-size: 24px;
@@ -388,14 +267,12 @@ body {
 }
 
 #quizAns label.correct {
-  /* background: #d8ffc4; */
   background: rgb(45, 236, 227);
   color: darkslategrey;
   border: 1px solid #60a03f;
 }
 
 #quizAns label.wrong {
-  /* background: #ffe8e8; */
   background: maroon;
   color: black;
   border: 1px solid #c78181;
@@ -425,7 +302,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   margin: 2em 16em 2em 12em;
-  /* margin: 2em 30em 2em 3em; */
   padding: 1em 2em 2em;
 }
 
@@ -491,6 +367,18 @@ legend {
 /* TABLET */
 
 @media all and (min-width: 769px) {
+  @media (prefers-reduced-motion: no-preference) {
+    .app-logo {
+      animation: none;
+      height: 15vmin;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .box1 {
+    overflow: scroll;
+  }
 }
 
 /* MOBILE */
@@ -503,7 +391,7 @@ legend {
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
-  /* (A) BREAK INTO VERTICAL MENU */
+  /* BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
     display: block;
@@ -511,21 +399,17 @@ legend {
     font-size: 1em;
     padding: 3px;
     border-top: 1px solid white;
-    /* border-top: 1px solid #333; */
   }
 
-  /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
     display: inline-block;
     color: white;
     background-color: rgb(46, 41, 41);
-    /* background: #a02620; */
     font-style: normal;
     font-size: 2em;
     padding: 10px;
   }
 
-  /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems {
     display: none;
     margin-right: 2em;
@@ -542,18 +426,7 @@ legend {
     height: 15vmin;
     padding-bottom: 1em;
     border-bottom: solid 5px rgb(109, 231, 219);
-    /* margin-top: 30vmin; */
-    /* align-items: center;
-    align-content: stretch; */
-    /* add flex-wrap: wrap; for mobile-first */
   }
-
-  /* .app-logo {
-    height: 20vmin;
-    padding-bottom: 5vmin;
-    margin-left: 10vmin;
-    margin-bottom: 8vmin;
-  } */
 
   .app-logo {
     display: none;
@@ -564,9 +437,8 @@ legend {
     text-align: center;
     margin-right: 0;
     margin-left: 2.5em;
-    /* text-align: center; */
-    /* margin-right: 2em; */
   }
+
   @media (prefers-reduced-motion: no-preference) {
     .app-logo {
       animation: none;
@@ -576,12 +448,35 @@ legend {
     }
   }
 
-  .coinSelect {
-    font-size: 0.8em;
-    margin: 1em 0.5em;
-    text-align: center;
-    /* height: 30em;
-    width: ; */
+  .box1 {
+    overflow: scroll;
+    height: 30vh;
+    width: 70vw;
+    padding: 5vmin;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    height: 100vh;
+    padding: 3vmin;
+  }
+
+  .box2,
+  .box3 {
+    width: 50vw;
+  }
+
+  .quiz {
+    margin: 2em 3em;
+    font-size: 1em;
+  }
+
+  #spanquiz {
+    font-size: 0.9em;
   }
 
   .fieldbox {
@@ -600,29 +495,4 @@ legend {
   .input {
     text-align: center;
   }
-
-  /* #hamitems {
-    display: flex;
-  }
-  #hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-  #hamitems a:hover {
-    background: #401408;
-  } */
-
-  /* (C) HIDE HAMBURGER */
-  /* #nav label,
-  #hamburger {
-    display: none;
-  } */
 }
-
-/* .app-link {
-  display: none;
-} */
