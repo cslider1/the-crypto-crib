@@ -366,12 +366,12 @@ legend {
 
 /* TABLET */
 
-@media all and (min-width: 769px) {
+@media all and (min-width: 769px) and (max-width: 1080px) {
   @media (prefers-reduced-motion: no-preference) {
     .app-logo {
       animation: none;
-      height: 15vmin;
-      margin-bottom: 0;
+      height: 20vmin;
+      margin-bottom: 10vmin;
       padding-bottom: 0;
     }
   }
@@ -494,5 +494,9 @@ legend {
 
   .input {
     text-align: center;
+  }
+
+  .constructHeader {
+    font-size: 1.1em;
   }
 }

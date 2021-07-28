@@ -1,27 +1,9 @@
-// document.addEventListener("DOMContentLoaded", function () {
-// Sticky Nav Bar
-// window.onscroll = function () {
-//   stickyNav();
-// };
-
-// var nav = document.getElementById("hamitems");
-// var sticky = nav.offsetTop;
-
-// function stickyNav() {
-//   if (window.pageYOffset >= sticky) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// }
-
 // Add Today's Date
 function dateAsString() {
   var today = new Date();
   var n = today.toLocaleDateString();
   document.getElementById("date").innerHTML = n;
 }
-
 dateAsString();
 
 // Add Countdown Timer
@@ -93,10 +75,12 @@ let saveFile = () => {
   newLink.click();
 };
 
+// QUIZ
+// (A) PROPERTIES
+// (A1) QUESTIONS & ANSWERS
+// q = QUESTION, o = OPTIONS, a = CORRECT ANSWER
+
 var quiz = {
-  // (A) PROPERTIES
-  // (A1) QUESTIONS & ANSWERS
-  // Q = QUESTION, O = OPTIONS, A = CORRECT ANSWER
   data: [
     {
       q: "What year was Bitcoin launched?",
@@ -214,54 +198,3 @@ window.addEventListener("load", quiz.init);
 function refreshPage() {
   window.location.reload();
 }
-
-// test button
-// const selectElement = document.getElementById("btn");
-
-// selectElement.addEventListener("click", function (event) {
-//   alert("Element clicked through function!");
-// });
-
-// bind to select box change (maybe an event handler)
-// wrap it IIFE so it will fire immediately?
-// document.getElementById("list").addEventListener.onchange = coinmarket;
-// function coinmarket(bitcoin) {
-//   fetch(
-//     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-//   )
-//     .then((response) => response.json())
-//     .then((data) => {
-//       // lowercase coinname and id for this > d.id === coinname
-//       let coin = data.find((d) => d.id === bitcoin);
-//       console.log(coin);
-
-//       // render coin data here
-//       // create wrapper div inside box1 div and append all the elements of json data I want
-//       // use let for each element
-//       // let image = `<img src=${coin.image} />`;
-//       let name = `  ${coin.name}`;
-//       let symbol = `  ${coin.symbol}`;
-//       let price = `  ${coin.current_price}`; // wrap in formatter.format
-//       let market_cap = `  ${coin.market_cap}`;
-//       // document.getElementsByClassName("image")[0].innerHTML = image;
-//       document.getElementsByClassName("symbol")[0].innerHTML = symbol;
-//       document.getElementsByClassName("name")[0].innerHTML = name;
-//       document.getElementsByClassName("price")[0].innerHTML = price;
-//       document.getElementsByClassName("market_cap")[0].innerHTML = market_cap;
-//     });
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   coinmarket();
-// });
-
-// const formatter = new Intl.NumberFormat("en-US", {
-//   style: "currency",
-//   currency: "USD",
-//   minimumFractionDigits: 0,
-// });
-
-// formatter.format();
-// formatter.format(10);
-// formatter.format(123233000);
-// });
