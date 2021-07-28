@@ -1,6 +1,6 @@
 ## The Crypto Crib
 
-The files in this repository are the initial documents for a cryptocurrency website.
+The files in this repository are the initial documents for a cryptocurrency education website.
 
 Access the site at http://thecryptocrib.com and be aware that this is not a secure site. It is advised that you do not enter live personal information in the form fields.
 
@@ -15,7 +15,7 @@ The following project requirements have been met:
   ![date](media/readme_date.png)
   <br>
   <br>
-- An array was created, populated with multiple values which are all retrieved and displayed in the completed "How much did you learn?" quiz:<br>
+- An array was created, populated with multiple values which are all retrieved and displayed in the "How much did you learn?" quiz:<br>
   <br>
   ![array](media/readme_array.png)
   ![quiz](media/readme_quiz.png)
@@ -29,11 +29,11 @@ The following project requirements have been met:
   <br>
   ![regex2](media/readme_regex2.png)<br>
   <br>
-- The same form, when submitted, will generate a local file in JSON format (cryptoFormData.txt) with the first name, last name, and email text:<br>
+- The same form, when submitted, will generate a local text file (cryptoFormData.txt) with the first name, last name, and email text:<br>
   <br>
   ![form_data](media/readme_form_data.png)
   <br>
   <br>
-  Next steps for this project will be to develop the educational content and the sub pages as well as improving the functionality and design for an ideal user experience.<br>
+  Next steps for this project will be to develop the educational content and the sub pages as well as improving the functionality and design for an ideal user experience.
   <br>
-  ### Thank you very much to the Code Louisville mentors - Ryan, Michael, and Elise - for their commitment to helping with this project!
+  #### Thank you very much to the Code Louisville mentors - Ryan, Michael, and Elise - for your commitment to helping with this project!
